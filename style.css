@@ -18,16 +18,14 @@ a {
 main {
   flex-grow: 1;
   display: flex;
-  max-width: 1000px;
-  padding: 0 16px;
+  padding: 0 64px;
   margin: 0 auto; }
 
 .article-category {
   display: inline-block; }
 
 footer .copyright {
-  max-width: 1000px;
-  padding: 0 16px;
+  padding: 0 64px;
   margin: 0 auto;
   display: flex;
   line-height: 3em;
@@ -42,8 +40,7 @@ header {
   margin-bottom: 15px;
   box-shadow: 0 2px 5px -2px rgba(0, 0, 0, 0.05); }
   header .header-container {
-    max-width: 1000px;
-    padding: 0 16px;
+    padding: 0 64px;
     margin: 0 auto;
     display: flex;
     font-size: 1.15em;
@@ -81,7 +78,7 @@ header {
     color: #6E7173; }
 
 #archive {
-  width: 1000px; }
+  width: 100%; }
   #archive .content {
     width: 66%;
     background-color: #ffffff;
@@ -89,6 +86,7 @@ header {
     box-shadow: 0 2px 5px -2px rgba(0, 0, 0, 0.05);
     overflow: hidden;
     box-sizing: border-box;
+    min-width: 90%;
     align-self: flex-start; }
     #archive .content .year-list {
       padding: 20px 25px 15px;
@@ -116,7 +114,7 @@ header {
 
 @media (min-width: 1032px) {
   #archive {
-    width: 1000px; } }
+    width: 100%; } }
 
 @media (max-width: 1032px) {
   #archive {
@@ -128,7 +126,7 @@ header {
     width: 100%; } }
 
 #post {
-  width: 1000px; }
+  min-width: 90%; }
   #post .content article {
     width: 66%;
     background-color: #ffffff;
@@ -165,9 +163,9 @@ header {
       #post .content .post-meta a:hover {
         color: #007fff; }
   #post > .content {
-    width: 66%; }
+    width: 76%; }
   #post aside {
-    flex-basis: 34%; }
+    flex-basis: 24%; }
     #post aside .toc-container {
       margin-left: 15px;
       box-sizing: border-box;
@@ -202,10 +200,6 @@ header {
           transition: 0.3s color; }
           #post aside .toc-container ol a:hover, #post aside .toc-container ol a.active {
             color: #007fff; }
-
-@media (min-width: 1032px) {
-  #post {
-    width: 1000px; } }
 
 @media (max-width: 1032px) {
   #post {
@@ -622,7 +616,7 @@ header {
   box-shadow: 0 2px 5px -2px rgba(0, 0, 0, 0.05);
   overflow: hidden;
   box-sizing: border-box;
-  flex-basis: 66%;
+  flex-basis: 76%;
   align-self: flex-start; }
   #index .posts-list section {
     padding: 20px 25px;
@@ -659,7 +653,7 @@ header {
 #index aside {
   position: sticky;
   top: 15px;
-  flex-basis: 34%; }
+  flex-basis: 24%; }
   #index aside > div {
     margin-left: 15px;
     box-sizing: border-box;
@@ -713,8 +707,7 @@ header {
     display: block; }
 
 .paging {
-  max-width: 1000px;
-  padding: 0 16px;
+  padding: 0 64px;
   margin: 0 auto;
   padding-top: 1em; }
   .paging .paging-container {
@@ -738,8 +731,6 @@ header {
       border: 1px solid #ddd; }
 
 @media (min-width: 1032px) {
-  #index {
-    width: 1000px; }
   .paging {
     width: 1000px; } }
 
@@ -830,7 +821,7 @@ header {
 
 @media (min-width: 1032px) {
   #tags {
-    width: 1000px; } }
+    width: 136%; } }
 
 @media (max-width: 700px) {
   #tags .tags-container {
